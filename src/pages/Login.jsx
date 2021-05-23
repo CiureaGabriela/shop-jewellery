@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/logo-diamonds3.png';
 import { ReactComponent as Google } from '../assets/icons/google.svg';
 import './Login.css'
 import { connect } from 'react-redux';
@@ -31,6 +31,7 @@ class Login extends React.Component {
                     <Google className="w-50 mr-3"/>
                     <span className="text-nowrap">Loghează-te cu Google</span>
                 </button>
+                  
             </div>
         );
     }

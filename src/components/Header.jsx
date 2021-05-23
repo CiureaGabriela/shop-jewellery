@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/logo-diamonds3.png';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
 import './Header.css';
 import { connect } from 'react-redux';
@@ -11,7 +11,8 @@ function Header(props) {
         <header className="border-bottom mb-3">
             <div className="container-fluid container-min-max-width d-flex justify-content-between align-items-center">
                 <Link to="/" className="my-3">
-                    <img src={Logo} alt="Sirluggia Shop" className="logo"/>
+                    <img src={Logo} alt="Gabriela Shop" className="logo w-50 "/> 
+                    
                 </Link>
                 <div>
                     { props.user
@@ -31,7 +32,14 @@ function Header(props) {
                         </div>
                     </div>
                 </div>
+                
             </div>
+            <Link to="/" >
+                   <div className="">
+                    <img className= "mx-10"  src= "https://cdn1.teilor.ro/slir/w1380/teilor.ro/cs-content/lps/banner_promotie_pure_diamonds_desktop.png?v=1"/>
+                    </div>
+            </Link>
+                 
         </header>
     );
 }
